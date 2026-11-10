@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lan="ja">
+    <head>
+        <meta charset="UTF-8">
+        <titile>配列の利用</titile>
+        <style>
+            table{
+            border-collapse:collapse;
+            border:solid 2px #666666;
+        }
+        th,td{
+            border:solid 2px #666666;
+            padding:10px 15px;
+        }
+        th{
+            background-color:#FFCC99;
+        }
+        td.num{
+            text-align:right;
+        }
+        td.no{
+            background-color:#FFCC99;
+            font-weight:bold;
+            text-align:center;
+        }
+        td.btn{
+            text-align:center;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>利用料の計算</h1>
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>料金（a）</th>
+                <th>人数</th>
+                <th>axb</th>
+            </tr>
+            <tr>
+                <td class="no">0</td>
+                <td class="num">500</td>
+                <td class="num">10</td>
+                <td class="btn"><button onclick="multiply(0);">料金の合計</button></td>
+            </tr>
+            <tr>
+                <td class="no">1</td>
+                <td class="num">980</td>
+                <td class="num">16</td>
+                <td class="btn"><button onclick="multiply(1);">料金の合計</button></td>
+            </tr>
+            <tr>
+                <td class="no">2</td>
+                <td class="num">1200</td>
+                <td class="num">8</td>
+                <td class="btn"><button onclick="multiply(2);">料金の合計</button></td>
+            </tr>
+        </table>
+        <script>
+            let a=[500,980,1200];
+            let b=[10,16,8];
+            function multiply(i){
+                let anser=a[i]*b[i];
+                alert('料金'+anser+'円です');
+            }
+        </script>
+    </body>
+    
+</html>
